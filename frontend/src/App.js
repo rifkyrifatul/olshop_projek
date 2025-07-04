@@ -1,0 +1,24 @@
+// File: src/App.js
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Impor yang diperlukan
+import LoginPage from './pages/LoginPage';
+import DashboardPage from './pages/DashboardPage';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/" element={<LoginPage />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
