@@ -25,7 +25,7 @@ Buka Git Bash atau terminal Anda untuk mengunduh proyek.
 
 1.  Clone repository dari GitHub:
     ```bash
-    git clone [URL_REPOSITORY]
+    git clone --branch <nama-branch> --single-branch <url-repository>
     ```
 
 2.  Masuk ke direktori proyek:
